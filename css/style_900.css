@@ -3,7 +3,7 @@
     color: black;
   }
   div.background {
-    background-size: auto calc(100% + 50px);
+    background-size: auto calc(100% + 100px);
   }
   div.transition {
     position: fixed;
@@ -126,48 +126,31 @@
   }
 
 
-
-  /* ------------------------ */
-  /* ------- A PROPOS ------- */
-  /* ------------------------ */
-  div.about_container {
-    display: flex;
-    padding: 0;
-  }
-  div.about_img {
-    flex: 1;
-    height: 100vh;
-  }
-  div.about_texte {
-    align-items: flex-start;
-
-    padding: 2rem;
-
-    flex: 2;
-  }
-  div.about_texte h3 {
-    font-size: 2rem;
-  }
-  div.about_texte p {
-    font-size: 1.5rem;
-  }
-
-
   /* ----------------------- */
   /* ------- PROJETS ------- */
   /* ----------------------- */
+  section#work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 4rem;
+  }
   div.projet_container {
     position: relative;
 
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+  }
+  div.projet_img {
+    margin: 0.8rem;
   }
   /* Image du projet */
   div.work_image {
     position: relative;
 
-    width: 716px;
-    height: 518px;
+    width: 45vw;
+    height: 33vw;
 
     overflow: hidden;
     transform: scale(0.8);
@@ -194,8 +177,8 @@
     transition: transform 1200ms;
   }
   div.work_number {
-    right: -4rem;
-    bottom: 2rem;
+    left: -4rem;
+    bottom: 1rem;
 
     overflow: hidden;
   }
@@ -209,18 +192,43 @@
   /* Texte du projet */
   div.projets_text {
     align-items: flex-start;
-
-    position: absolute;
-    top: 10vh;
-    left: 0;
-
-    width: 60vw;
+    justify-content: center;
+    margin: 0.8rem;
   }
   div.projets_text h3 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   div.projets_text p {
     font-size: 1.5rem;
+  }
+  div.projets_text a {
+    overflow: hidden;
+    padding: 4px;
+  }
+  div.projets_text div.button {
+    position: relative;
+
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #070707;
+    text-transform: uppercase;
+  }
+  div.projets_text div.button_hover {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 100%;
+    height: 100%;
+    background: #BE9289;
+
+    transform: translateX(106%);
+    transition: transform 500ms;
+
+    z-index: -1;
+  }
+  div.projets_text div.button:hover div.button_hover {
+    transform: translateX(0);
   }
 
 /* ----------------- */
@@ -253,8 +261,17 @@
   section#about {
     flex-direction: row;
   }
+  div.about_texte {
+    flex: 2;
+
+    padding: 3rem;
+  }
   div.about_img {
-    width: 30vw;
+    flex: 1;
+
     height: 100vh;
+  }
+  div.about_texte p {
+    font-size: 1.5rem;
   }
 }

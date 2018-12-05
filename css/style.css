@@ -1,6 +1,7 @@
 Bleu : #1F404D
 Rose : #BE9289
 Beige : #E0E1DF
+Noir : #070707
 
 
 /*----------------------*/
@@ -72,6 +73,8 @@ div.background {
   background-size: auto 80%;
   background-repeat: no-repeat;
   background-position: bottom left;
+
+  z-index: -2;
 }
 /* ---------------- */
 /* ----- MENU ----- */
@@ -301,7 +304,13 @@ section#about {
   flex-direction: column;
 }
 div.about_texte {
-
+}
+div.contact > div p:nth-child(1) {
+  font-size: 1.5rem;
+}
+div.contact > div p:nth-child(2) {
+  font-size: 2rem;
+  font-family: "Assistant_SemiBold";
 }
 div.about_img {
   width: 100vw;
@@ -310,47 +319,4 @@ div.about_img {
   background-image: url('../img/about.jpeg');
   background-size: cover;
   background-position: center;
-}
-
-/* ----------------------- */
-/* ------- CONTACT ------- */
-/* ----------------------- */
-section.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 30px 10px 10px 10px;
-}
-div.contact_container > div {
-  margin-bottom: 20px;
-}
-div.contact_container > div p:nth-child(1) {
-  font-size: 1.5rem;
-}
-div.contact_container > div p:nth-child(2) {
-  font-size: 2rem;
-  font-family: "Assistant_SemiBold";
-}
-div.contact_container a {
-  color: white;
-  border: none;
-}
-div.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-div.footer div.reseaux_sociaux a {
-  font-size: 1.2rem;
-  color: white;
-
-  margin: 0.5rem;
-  border-bottom: 1px solid #BE9289;
-}
-div.footer p {
-  color: rgba(255, 255, 255, 0.5);
-
-  margin-top: 0.5rem;
 }
