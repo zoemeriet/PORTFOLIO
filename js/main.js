@@ -38,10 +38,14 @@ var myMenu = document.querySelectorAll('.menu__item');
 var myTransition = document.querySelector('.transition');
 myMenu.forEach(function(e) {
   e.addEventListener('click', function() {
+    var target = e.dataset.target;
     myTransition.classList.add('active');
+    setTimeout(function () {
+      document.querySelector(target).scrollIntoView();
+    }, 800);
     setTimeout(function(){
       myTransition.classList.remove('active');
-    }, 3000);
+    }, 1600);
   });
 });
 

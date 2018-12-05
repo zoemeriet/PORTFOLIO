@@ -217,7 +217,6 @@ section {
   position: relative;
 
   height: 100vh;
-  overflow: hidden;
 }
 section h2 {
   margin: 20px 0;
@@ -236,44 +235,10 @@ section a div {
   background: white;
 } */
 
-/* --------------------- */
-/* ------- ABOUT ------- */
-/* --------------------- */
-div.about_container {
-  padding: 10px;
-}
-div.about_container div.about_texte {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-div.about_container h3 {
-  font-size: 1.8rem;
-  font-family: "Nunito_Bold";
-
-  margin: 15px 0;
-}
-div.about_container p {
-  margin: 15px 0;
-}
-div.about_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* width: 100vw;
-  height: 30vh; */
-
-  background-image: url('../img/about.jpeg');
-  background-size: cover;
-  background-position: center;
-}
 /* ----------------------- */
 /* ------- PROJETS ------- */
 /* ----------------------- */
-section.projets {
 
-}
 /* Image du projet */
 div.projet_img {
   position: relative;
@@ -328,6 +293,24 @@ div.projets_text a {
   margin-top: 20px;
 }
 
+/* --------------------- */
+/* ------- ABOUT ------- */
+/* --------------------- */
+section#about {
+  display: flex;
+  flex-direction: column;
+}
+div.about_texte {
+
+}
+div.about_img {
+  width: 100vw;
+  height: 20vh;
+
+  background-image: url('../img/about.jpeg');
+  background-size: cover;
+  background-position: center;
+}
 
 /* ----------------------- */
 /* ------- CONTACT ------- */

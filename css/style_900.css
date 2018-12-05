@@ -2,21 +2,20 @@
   body, h1, h2, h3, p {
     color: black;
   }
-  /* section {
-    padding: 30px 90px;
-  } */
   div.background {
     background-size: auto calc(100% + 50px);
   }
   div.transition {
-    position: absolute;
+    position: fixed;
     left: 0;
 
     width: 100vw;
     background: #1F404D;
+
+    z-index: 20;
   }
   div.transition.active {
-    animation: animTransition 3s ease;
+    animation: animTransition 1.6s ease;
   }
   @keyframes animTransition {
       0% {
@@ -248,10 +247,14 @@
 
 
 
-  /* ----------------------- */
-  /* ------- CONTACT ------- */
-  /* ----------------------- */
-  section.contact {
-    align-items: flex-start;
+  /* --------------------- */
+  /* ------- ABOUT ------- */
+  /* --------------------- */
+  section#about {
+    flex-direction: row;
+  }
+  div.about_img {
+    width: 30vw;
+    height: 100vh;
   }
 }
