@@ -285,8 +285,7 @@ div.projets_text h3 {
 }
 div.projets_text div.line {
   width: 150px;
-  height: 6px;
-  border-radius: 6px;
+  height: 3px;
   background: white;
 }
 div.projets_text p {

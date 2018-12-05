@@ -196,9 +196,14 @@
     margin: 0.8rem;
   }
   div.projets_text h3 {
+    font-family: "Vidaloka";
     font-size: 5rem;
   }
+  div.projets_text div.line {
+    background: #BE9289;
+  }
   div.projets_text p {
+    margin-top: 2rem;
     font-size: 1.5rem;
   }
   div.projets_text a {
