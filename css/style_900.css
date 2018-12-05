@@ -1,0 +1,257 @@
+@media screen and (min-width: 900px) {
+  body, h1, h2, h3, p {
+    color: black;
+  }
+  /* section {
+    padding: 30px 90px;
+  } */
+  div.background {
+    background-size: auto calc(100% + 50px);
+  }
+  div.transition {
+    position: absolute;
+    left: 0;
+
+    width: 100vw;
+    background: #1F404D;
+  }
+  div.transition.active {
+    animation: animTransition 3s ease;
+  }
+  @keyframes animTransition {
+      0% {
+        height: 0;
+        top: 100vh;
+      }
+
+      50% {
+        height: 100vh;
+        top: 0;
+      }
+
+      100% {
+        height: 0;
+        top: 0;
+      }
+  }
+  /* ---------------- */
+  /* ----- MENU ----- */
+  /* ---------------- */
+  nav {
+    flex-direction: row;
+    width: auto;
+    background: none;
+
+    transform: translateX(0);
+
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+  }
+  nav div {
+    margin: 0.8rem;
+  }
+  nav a {
+    color: #1F404D;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+  }
+
+  .menu__item-name {
+  	position: relative;
+  }
+
+  .menu__item-name {
+  	padding: 0.35em 0;
+  }
+
+  .menu__item-name::before {
+  	content: '';
+  	position: absolute;
+  	z-index: -1;
+  	width: 50%;
+  	height: 100%;
+  	left: 0;
+  	bottom: 0;
+  	transform: scale3d(1,0,0);
+  	transform-origin: 0% 0%;
+  	transition: transform 0.5s;
+  	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+  }
+
+  .menu__item-name::before {
+  	background: #BE9289;
+  }
+
+  /* Hover */
+  .menu__item:hover .menu__item-name::before,
+  .menu__item:focus .menu__item-name::before {
+  	transform: scale3d(1,1,1);
+  }
+  /* ----- BURGER ----- */
+  div.burger {
+    display: none;
+  }
+  /* -------------------- */
+  /* ------- HOME ------- */
+  /* -------------------- */
+
+  /* ----- LOGO ----- */
+  div.logo img {
+    width: 500px;
+  }
+  div.logo img.logo_black {
+    display: block;
+  }
+  div.logo img.logo_white {
+    display: none;
+  }
+  div.logo div.meriet>div {
+    font-size: 4rem;
+    color: #1F404D;
+  }
+
+  header.scrolled1 div.line_header {
+    height: 100vh;
+    transition: height 1200ms;
+  }
+  header.scrolled2 div.line_header {
+    width: 100vw;
+    transition: width 1200ms;
+
+    left: 0;
+  }
+  div.line_header div {
+    width: 1.5px;
+    height: 50px;
+    background: #1f404d;
+  }
+
+
+
+  /* ------------------------ */
+  /* ------- A PROPOS ------- */
+  /* ------------------------ */
+  div.about_container {
+    display: flex;
+    padding: 0;
+  }
+  div.about_img {
+    flex: 1;
+    height: 100vh;
+  }
+  div.about_texte {
+    align-items: flex-start;
+
+    padding: 2rem;
+
+    flex: 2;
+  }
+  div.about_texte h3 {
+    font-size: 2rem;
+  }
+  div.about_texte p {
+    font-size: 1.5rem;
+  }
+
+
+  /* ----------------------- */
+  /* ------- PROJETS ------- */
+  /* ----------------------- */
+  div.projet_container {
+    position: relative;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  /* Image du projet */
+  div.work_image {
+    position: relative;
+
+    width: 716px;
+    height: 518px;
+
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: transform 1200ms;
+  }
+  div.work_image > div {
+    width: 100%;
+    height: 100%;
+  }
+  div.image_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background: #1f404d;
+
+    transform: translateX(0);
+    transition: transform 700ms;
+  }
+  div.image_cover:last-child {
+    background: #be9289;
+    transition: transform 1200ms;
+  }
+  div.work_number {
+    right: -4rem;
+    bottom: 2rem;
+
+    overflow: hidden;
+  }
+  div.work_number p {
+    font-size: 10rem;
+    color: white;
+
+    transform: translateY(10rem);
+    transition: transform 700ms;
+  }
+  /* Texte du projet */
+  div.projets_text {
+    align-items: flex-start;
+
+    position: absolute;
+    top: 10vh;
+    left: 0;
+
+    width: 60vw;
+  }
+  div.projets_text h3 {
+    font-size: 6rem;
+  }
+  div.projets_text p {
+    font-size: 1.5rem;
+  }
+
+/* ----------------- */
+/* ANIMATIONS PROJET */
+/* ----------------- */
+  /* Image */
+  section.projet_scrolled div.work_image {
+    transform: scale(1);
+    transition: transform 1200ms;
+  }
+  section.projet_scrolled div.image_cover {
+    transform: translateX(100%);
+    transition: transform 1200ms;
+  }
+  section.projet_scrolled div.image_cover:last-child {
+    transition: transform 700ms;
+  }
+  /* Numéro */
+  section.projet_scrolled div.work_number p {
+    transform: translateY(0);
+    transition: transform 700ms;
+    transition-delay: 1000ms;
+  }
+
+
+
+  /* ----------------------- */
+  /* ------- CONTACT ------- */
+  /* ----------------------- */
+  section.contact {
+    align-items: flex-start;
+  }
+}

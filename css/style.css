@@ -1,0 +1,373 @@
+Bleu : #1F404D
+Rose : #BE9289
+Beige : #E0E1DF
+
+
+/*----------------------*/
+/*-------- FONT --------*/
+/*----------------------*/
+@font-face {
+ font-family: "Assistant_Light";
+ src: url("../font/Assistant/Assistant-Light.ttf");
+}
+@font-face {
+ font-family: "Assistant";
+ src: url("../font/Assistant/Assistant-Regular.ttf");
+}
+@font-face {
+ font-family: "Assistant_SemiBold";
+ src: url("../font/Assistant/Assistant-SemiBold.ttf");
+}
+@font-face {
+ font-family: "Assistant_Bold";
+ src: url("../font/Assistant/Assistant-Bold.ttf");
+}
+@font-face {
+ font-family: "Vidaloka";
+ src: url("../font/Vidaloka/Vidaloka-Regular.ttf");
+}
+
+@font-face {
+ font-family: "Nunito";
+ src: url("../font/Nunito/Nunito-Regular.ttf");
+}
+@font-face {
+ font-family: "Nunito_Bold";
+ src: url("../font/Nunito/Nunito-SemiBold.ttf");
+}
+
+/*---------------------*/
+/*-------- CSS --------*/
+/*---------------------*/
+* {
+  box-sizing: border-box;
+}
+body, h1, h2, h3, p {
+  margin: 0;
+  font-weight: normal;
+  color: white;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Nunito";
+}
+h1, h2 {
+  font-family: "Vidaloka";
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+div.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #DFDFDF;
+  background-image: url('../img/background.png');
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+/* ---------------- */
+/* ----- MENU ----- */
+/* ---------------- */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  background: #1f404d;
+  letter-spacing: 3px;
+
+  /* Décale la nav de 30vw */
+  transform: translateX(100vw);
+  transition: transform 700ms;
+
+  z-index: 10;
+}
+nav div {
+  width: 100%;
+  margin: 1rem 0;
+  text-align: center;
+}
+nav a {
+  font-family: "Vidaloka";
+  font-weight: normal;
+  font-size: 2rem;
+  color: #E0E1DF;
+
+}
+div.active span {
+  background: #E0E1DF;
+}
+div.active span:nth-child(1) {
+  top: 13px;
+  transform: rotate(45deg);
+}
+div.active span:nth-child(2) {
+  transform: scale(0);
+}
+div.active span:nth-child(3) {
+  bottom: 13px;
+  transform: rotate(135deg);
+}
+nav.visible {
+  transform: translateX(0);
+}
+/* ----- BURGER ----- */
+div.burger {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 45px;
+  height: 30px;
+
+  z-index: 20;
+  cursor: pointer;
+}
+div.burger span {
+  position: relative;
+  transition: all .5s;
+  display: block;
+
+  width: 100%;
+  height: 4px;
+  border-radius: 8px;
+
+  background: white;
+}
+
+
+/* -------------------- */
+/* ------- HOME ------- */
+/* -------------------- */
+header {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+/* ----- LOGO ----- */
+div.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.logo img {
+  width: 80vw;
+}
+div.logo img.logo_black {
+  display: none;
+}
+div.logo div.meriet {
+  width: 100%;
+}
+div.logo div.meriet>div {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  font-size: 2.4rem;
+  font-family: "Vidaloka";
+}
+/* ----- SCROLL ----- */
+div.line_header {
+  position: absolute;
+  bottom: 0;
+  left: 50vw;
+
+  display: flex;
+}
+div.line_header div {
+  width: 1px;
+  height: 60px;
+  background: white;
+}
+
+
+
+/*--------------------------*/
+/*-------- SECTIONS --------*/
+/*--------------------------*/
+section {
+  position: relative;
+
+  height: 100vh;
+  overflow: hidden;
+}
+section h2 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+/* section a {
+  padding: 5px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+section a div {
+  padding: 10px 40px;
+  width: 100%;
+  height: 100%;
+  background: white;
+} */
+
+/* --------------------- */
+/* ------- ABOUT ------- */
+/* --------------------- */
+div.about_container {
+  padding: 10px;
+}
+div.about_container div.about_texte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.about_container h3 {
+  font-size: 1.8rem;
+  font-family: "Nunito_Bold";
+
+  margin: 15px 0;
+}
+div.about_container p {
+  margin: 15px 0;
+}
+div.about_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 100vw;
+  height: 30vh; */
+
+  background-image: url('../img/about.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+/* ----------------------- */
+/* ------- PROJETS ------- */
+/* ----------------------- */
+section.projets {
+
+}
+/* Image du projet */
+div.projet_img {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+div.work_image {
+  width: 80vw;
+  height: 60vw;
+  background-size: cover;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+section.projet1 div.work_image {
+  background-image: url('../img/projet/background_restaurant.jpg');
+}
+section.projet2 div.work_image {
+  background-image: url('../img/projet/background_gite.jpg');
+}
+div.work_number {
+  position: absolute;
+  bottom: -3rem;
+}
+div.work_number p {
+  font-family: "Vidaloka";
+  font-size: 5rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+/* Texte du projet */
+div.projets_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.projets_text h3 {
+  font-family: "Nunito_Bold";
+  font-size: 2.5rem;
+}
+div.projets_text div.line {
+  width: 150px;
+  height: 6px;
+  border-radius: 6px;
+  background: white;
+}
+div.projets_text p {
+  margin: 5px 0;
+}
+div.projets_text a {
+  margin-top: 20px;
+}
+
+
+/* ----------------------- */
+/* ------- CONTACT ------- */
+/* ----------------------- */
+section.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px 10px 10px 10px;
+}
+div.contact_container > div {
+  margin-bottom: 20px;
+}
+div.contact_container > div p:nth-child(1) {
+  font-size: 1.5rem;
+}
+div.contact_container > div p:nth-child(2) {
+  font-size: 2rem;
+  font-family: "Assistant_SemiBold";
+}
+div.contact_container a {
+  color: white;
+  border: none;
+}
+div.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.footer div.reseaux_sociaux a {
+  font-size: 1.2rem;
+  color: white;
+
+  margin: 0.5rem;
+  border-bottom: 1px solid #BE9289;
+}
+div.footer p {
+  color: rgba(255, 255, 255, 0.5);
+
+  margin-top: 0.5rem;
+}
