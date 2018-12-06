@@ -51,7 +51,10 @@ myMenu.forEach(function(e) {
 
 }
 
+
+/////////////////////
 //// BURGER MENU ////
+/////////////////////
 var myBurger = document.querySelector(".burger");
 var myNav = document.querySelector("nav");
 myBurger.addEventListener("click", function(event){
@@ -59,10 +62,11 @@ myBurger.addEventListener("click", function(event){
   myBurger.classList.toggle("active");
 });
 
-var myImage = document.querySelector(".projets h2");
-var myCover1 = document.querySelector(".image_cover:first-child");
-var myCover2 = document.querySelector(".image_cover:last-child");
-myImage.addEventListener("click", function(){
-  myCover1.classList.toggle('image_left');
-  myCover2.classList.toggle('image_left');
+
+//////////////////////////
+//// ANIMATION PROJET ////
+//////////////////////////
+var myProject = document.querySelector(".projet_container");
+window.addEventListener("click", function(){
+  myProject.classList.toggle('projet_actif');
 });

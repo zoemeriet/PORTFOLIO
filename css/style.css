@@ -274,24 +274,24 @@ div.work_number p {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 /* Texte du projet */
-div.projets_text {
+div.projet_text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-div.projets_text h3 {
+div.projet_text h3 {
   font-family: "Nunito_Bold";
   font-size: 2.5rem;
 }
-div.projets_text div.line {
+div.projet_text div.line {
   width: 150px;
   height: 3px;
   background: white;
 }
-div.projets_text p {
+div.projet_text p {
   margin: 5px 0;
 }
-div.projets_text a {
+div.projet_text a {
   margin-top: 20px;
 }
 
