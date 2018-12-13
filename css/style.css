@@ -258,11 +258,8 @@ div.work_image {
   background-size: cover;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-section.projet1 div.work_image {
+section.projets div.work_image {
   background-image: url('../img/projet/background_restaurant.jpg');
-}
-section.projet2 div.work_image {
-  background-image: url('../img/projet/background_gite.jpg');
 }
 div.work_number {
   position: absolute;
@@ -292,7 +289,29 @@ div.projet_text p {
   margin: 5px 0;
 }
 div.projet_text a {
-  margin-top: 20px;
+  overflow: hidden;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  color: white
+}
+div.projet_text div.button {
+  position: relative;
+
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+div.projet_text div.button_hover {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  width: 100%;
+  height: 100%;
+  background: #BE9289;
+
+  z-index: -1;
 }
 
 /* --------------------- */
