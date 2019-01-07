@@ -91,7 +91,7 @@ div.background {
   height: 100vh;
 
   background-color: #DFDFDF;
-  background-image: url('../img/background.png');
+  /* background-image: url('../img/background.png'); */
   background-size: auto 80%;
   background-repeat: no-repeat;
   background-position: bottom left;

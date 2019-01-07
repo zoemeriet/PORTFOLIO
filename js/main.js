@@ -61,7 +61,7 @@ if (desktop.matches) {
       }, 1600);
     });
   });
-  
+
 // Fin de if (desktop.matches)
 };
 
@@ -79,7 +79,8 @@ var projet_image = document.querySelector(".work_image");
 var projet_num = document.querySelector(".work_number p");
 var projet_titre = document.querySelector(".projet_text h3");
 var projet_description = document.querySelector(".projet_text p");
-var projet_bouton = document.querySelector(".projet_text .button");
+var projet_bouton = document.querySelector(".projet_text .button span");
+var projet_url = document.querySelector(".projet_text a");
 
 
 ////// Projet 1 //////
@@ -93,10 +94,11 @@ myProject1.addEventListener('click', function() {
   setTimeout(function() {
     // Changement des éléments
     projet_image.style.backgroundImage = "url('img/projet/background_restaurant.jpg')";
-    projet_num.innerHTML = "01";
-    projet_titre.innerHTML = "Restaurant";
-    projet_description.innerHTML = "Site fictif d'un restaurant. Réalisé en HTML/CSS";
-    projet_bouton.innerHTML = "Voir la demo";
+    projet_num.textContent = "01";
+    projet_titre.textContent = "Restaurant";
+    projet_description.textContent = "Site fictif d'un restaurant. Réalisé en HTML/CSS";
+    projet_bouton.textContent = "Voir la demo";
+    projet_url.href = "http://restaurant.zoemeriet.com/";
     // Découvrir
     myProject.classList.add('projet_actif');
   }, 1600);
@@ -113,10 +115,11 @@ myProject2.addEventListener('click', function() {
   setTimeout(function() {
     // Changement des éléments
     projet_image.style.backgroundImage = "url('img/projet/background_gite.jpg')";
-    projet_num.innerHTML = "02";
-    projet_titre.innerHTML = "Gîte Entre Nous";
-    projet_description.innerHTML = "Site Internet réalisé avec Wordpress";
-    projet_bouton.innerHTML = "Voir le site";
+    projet_num.textContent = "02";
+    projet_titre.textContent = "Gîte Entre Nous";
+    projet_description.textContent = "Site Internet réalisé avec Wordpress";
+    projet_bouton.textContent = "Voir le site";
+    projet_url.href = "https://gite-entrenous.com/";
     // Découvrir
     myProject.classList.add('projet_actif');
   }, 1600);

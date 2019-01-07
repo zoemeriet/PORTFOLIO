@@ -6,6 +6,7 @@
     display: none;
   }
   div.background {
+    background-image: url('../img/background.png');
     background-size: auto calc(100% + 100px);
   }
   div.transition {
@@ -64,6 +65,7 @@
 
   a.menu__item-name {
   	padding: 0.35em 0;
+    cursor: pointer;
   }
 
   .menu__item-name::before {
@@ -232,23 +234,6 @@
   }
   div.projet_text div.button:hover div.button_hover {
     transform: translateX(0);
-  }
-
-  @keyframes animButton {
-      0% {
-        transform: translateX(106%);
-        width: 100%;
-      }
-
-      50% {
-        transform: translateX(0);
-        width: 100%;
-      }
-
-      100% {
-        transform: translateX(0);
-        width: 0;
-      }
   }
 
   div.pagination {
