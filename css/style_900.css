@@ -2,7 +2,7 @@
   body, h1, h2, h3, p {
     color: black;
   }
-  h2 {
+  div.title_h2 {
     display: none;
   }
   div.background {
@@ -223,19 +223,13 @@
     margin-top: 2rem;
     font-size: 1.5rem;
   }
-  div.projet_text a {
-    color: #070707;
-  }
-  div.projet_text div.button {
-    border: 1px solid #070707;
-  }
-  div.projet_text div.button_hover {
+  /* div.projet_text div.button_hover {
     transform: translateX(106%);
     transition: transform 500ms;
   }
   div.projet_text div.button:hover div.button_hover {
     transform: translateX(0);
-  }
+  } */
 
   div.pagination {
     position: absolute;
