@@ -8,6 +8,7 @@
   div.background {
     background-image: url('../img/background.png');
     background-size: auto calc(100% + 100px);
+    background-position: bottom left;
   }
   div.transition {
     position: fixed;

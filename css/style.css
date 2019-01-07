@@ -46,7 +46,7 @@ Noir : #070707
 body, h1, h2, h3, p {
   margin: 0;
   font-weight: normal;
-  color: white;
+  /* color: white; */
 }
 body {
   overflow-x: hidden;
@@ -91,10 +91,10 @@ div.background {
   height: 100vh;
 
   background-color: #DFDFDF;
-  /* background-image: url('../img/background.png'); */
-  background-size: auto 80%;
+  background-image: url('../img/small_background.png');
+  background-size: 90% auto;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: top right;
 
   z-index: -2;
 }
@@ -206,7 +206,7 @@ div.logo img {
   width: 80vw;
 }
 div.logo img.logo_black {
-  display: none;
+
 }
 div.logo div.meriet {
   width: 100%;
