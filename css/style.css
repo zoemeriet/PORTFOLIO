@@ -55,6 +55,9 @@ body {
   overflow-x: hidden;
   font-family: "Nunito";
 }
+section#work, section#about {
+  padding: 0 0.8rem;
+}
 h1, h2 {
   font-family: "Vidaloka";
 }
@@ -199,9 +202,9 @@ div.burger span {
 }
 
 
-/* -------------------- */
-/* ------- HOME ------- */
-/* -------------------- */
+/* ---------------------- */
+/* ------- HEADER ------- */
+/* ---------------------- */
 header {
   position: relative;
 
@@ -223,9 +226,6 @@ div.logo {
 div.logo img {
   width: 80vw;
 }
-div.logo img.logo_black {
-
-}
 div.logo div.meriet {
   width: 100%;
 }
@@ -236,30 +236,13 @@ div.logo div.meriet>div {
   width: 100%;
   font-size: 2.4rem;
   font-family: "Vidaloka";
+  color: #1F404D;
 }
-/* ----- SCROLL ----- */
-div.line_header {
-  position: absolute;
-  bottom: 0;
-  left: 50vw;
-
-  display: flex;
-}
-div.line_header div {
-  width: 1px;
-  height: 60px;
-  background: white;
-}
-
-
-
 /*--------------------------*/
 /*-------- SECTIONS --------*/
 /*--------------------------*/
 section {
   position: relative;
-
-  height: 100vh;
 }
 section h2 {
   margin: 20px 0;
@@ -321,9 +304,6 @@ div.projet_text p {
 /* --------------------- */
 /* ------- ABOUT ------- */
 /* --------------------- */
-section#about {
-  padding: 0 0.8rem;
-}
 div.about_texte h3 {
   font-size: 2rem;
   font-family: "Assistant_SemiBold";
