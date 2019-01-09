@@ -57,7 +57,8 @@ body {
 }
 /*---- SECTION ----*/
 section#work, section#about {
-  padding: 0 0.8rem;
+  position: relative;
+  padding: 1.5rem 0.8rem;
 }
 /*---- TITRE ----*/
 h1 {
@@ -65,11 +66,16 @@ h1 {
 }
 div.title_h2 {
   position: relative;
+
+  padding: 0.5rem 0;
+  margin: 0.8rem 0;
 }
 div.title_h2 h2 {
+  text-align: center;
   font-family: "Vidaloka";
   font-size: 3rem;
-  color: #FFFFFF;
+  font-weight: normal;
+  color: white;
 }
 div.line_h2 {
   position: absolute;
@@ -244,17 +250,6 @@ div.logo div.meriet>div {
   font-size: 2.4rem;
   font-family: "Vidaloka";
   color: #1F404D;
-}
-/*--------------------------*/
-/*-------- SECTIONS --------*/
-/*--------------------------*/
-section {
-  position: relative;
-}
-section h2 {
-  margin: 20px 0;
-  font-size: 2.5rem;
-  text-align: center;
 }
 
 /* ----------------------- */
