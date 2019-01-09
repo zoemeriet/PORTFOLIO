@@ -260,7 +260,9 @@ div.button_hover {
 /* ----------------------- */
 /* ------- PROJETS ------- */
 /* ----------------------- */
-
+div.projet_container {
+  margin: 3rem 0;
+}
 /* Image du projet */
 div.projet_img {
   position: relative;
@@ -286,6 +288,7 @@ div.work_number {
 }
 div.work_number p {
   font-family: "Vidaloka";
+  color: white;
   font-size: 5rem;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
@@ -302,10 +305,11 @@ div.projet_text h3 {
 div.projet_text div.line {
   width: 150px;
   height: 3px;
-  background: white;
+  background: #1F404D;
 }
 div.projet_text p {
   margin: 5px 0;
+  text-align: center;
 }
 
 /* --------------------- */

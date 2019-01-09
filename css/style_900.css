@@ -163,7 +163,6 @@
   }
   div.work_number p {
     font-size: 10rem;
-    color: white;
 
     transform: translateY(10rem);
     transition: transform 700ms;
