@@ -47,6 +47,10 @@ body, h1, h2, h3, p {
   margin: 0;
   font-weight: normal;
 }
+main {
+  position: relative;
+  z-index: 1;
+}
 body {
   overflow-x: hidden;
   font-family: "Nunito";
@@ -110,7 +114,7 @@ div.background {
   background-repeat: no-repeat;
   background-position: top right;
 
-  /* z-index: -20; */
+  z-index: -3;
 }
 /* ---------------- */
 /* ----- MENU ----- */
