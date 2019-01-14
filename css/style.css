@@ -319,12 +319,28 @@ div.pagination {
 /* --------------------- */
 /* ------- ABOUT ------- */
 /* --------------------- */
+section#about {
+  min-height: 100vh;
+}
+div.about_texte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 div.about_texte h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Assistant_SemiBold";
 }
 div.about_texte > p {
   font-size: 1.5rem;
+}
+div.reseaux_sociaux {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
 }
 div.reseaux_sociaux a {
   margin: 0.2rem;
