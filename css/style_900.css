@@ -113,6 +113,7 @@
     justify-content: center;
     align-items: center;
 
+    height: 100vh;
     padding: 1rem 4rem;
   }
   div.projet_container {
@@ -193,13 +194,6 @@
     margin-top: 2rem;
     font-size: 1.5rem;
   }
-  /* div.projet_text div.button_hover {
-    transform: translateX(106%);
-    transition: transform 500ms;
-  }
-  div.projet_text div.button:hover div.button_hover {
-    transform: translateX(0);
-  } */
 
   div.pagination {
     position: absolute;
@@ -252,6 +246,13 @@
     transform: translateX(0);
   }
 
+
+
+
+  div.projet_responsive {
+    display: none;
+  }
+
 /* ----------------- */
 /* ANIMATIONS PROJET */
 /* ----------------- */
@@ -293,6 +294,7 @@
     justify-content: flex-end;
     align-items: center;
 
+    height: 100vh;
     padding: 2rem 4rem;
   }
   div.about_texte {

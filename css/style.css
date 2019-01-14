@@ -312,6 +312,10 @@ div.projet_text p {
   text-align: center;
 }
 
+div.pagination {
+  display: none;
+}
+
 /* --------------------- */
 /* ------- ABOUT ------- */
 /* --------------------- */
