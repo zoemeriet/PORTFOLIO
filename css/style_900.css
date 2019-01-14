@@ -35,6 +35,16 @@
         top: 0;
       }
   }
+
+
+  /* Bouton */
+  div.button_hover {
+    transform: translateX(101%);
+    transition: transform 700ms;
+  }
+  div.button:hover div.button_hover {
+    transform: translateX(0);
+  }
   /* ---------------- */
   /* ----- MENU ----- */
   /* ---------------- */
@@ -247,8 +257,6 @@
   }
 
 
-
-
   div.projet_responsive {
     display: none;
   }
@@ -298,7 +306,7 @@
     padding: 2rem 4rem;
   }
   div.about_texte {
-    border: 1px solid red;
+    align-items: flex-start;
     width: 60vw;
   }
   div.about_texte h3 {
@@ -307,6 +315,12 @@
   }
   div.about_texte p {
     font-size: 1.5rem;
+  }
+  div.contact {
+    text-align: left;
+  }
+  div.reseaux_sociaux {
+    justify-content: flex-start;
   }
   div.reseaux_sociaux a {
     font-size: 1.3rem;
