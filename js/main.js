@@ -101,7 +101,7 @@ myProject1.addEventListener('click', function() {
     projet_url.href = "http://restaurant.zoemeriet.com/";
     // Découvrir
     myProject.classList.add('projet_actif');
-  }, 1600);
+  }, 900);
 });
 
 ////// Projet 2 //////
@@ -122,36 +122,5 @@ myProject2.addEventListener('click', function() {
     projet_url.href = "https://gite-entrenous.com/";
     // Découvrir
     myProject.classList.add('projet_actif');
-  }, 1600);
+  }, 900);
 });
-// myNumProjet.forEach(function(e) {
-//   e.addEventListener('click', function() {
-//     console.log(e);
-//     if (e = myProject1) {
-//       myProject2.classList.remove('num_actif');
-//       myProject1.classList.add('num_actif');
-//     }
-//     if (e = myProject2) {
-//       myProject2.classList.add('num_actif');
-//       myProject1.classList.remove('num_actif');
-//     }
-//     myProject.classList.remove('projet_actif');
-//     setTimeout(function(){
-//       if (e = myProject1) {
-//         projet_image.style.backgroundImage = "url('img/projet/background_restaurant.jpg')";
-//         projet_num.innerHTML = "01";
-//         projet_titre.innerHTML = "Restaurant";
-//         projet_description.innerHTML = "Site fictif d'un restaurant. Réalisé en HTML/CSS";
-//         projet_bouton.innerHTML = "Voir la demo";
-//       }
-//       if (e = myProject2) {
-//         projet_image.style.backgroundImage = "url('img/projet/background_gite.jpg')";
-//         projet_num.innerHTML = "02";
-//         projet_titre.innerHTML = "Gîte Entre Nous";
-//         projet_description.innerHTML = "Site Internet réalisé avec Wordpress";
-//         projet_bouton.innerHTML = "Voir le site";
-//       }
-//       myProject.classList.add('projet_actif');
-//     }, 1600);
-//   });
-// });
