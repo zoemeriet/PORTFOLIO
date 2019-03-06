@@ -4,20 +4,33 @@ var pageProjets = document.querySelector('main.works');
 
 fetch('http://admin.zoemeriet.com/wp-json/wp/v2/projet').then(function(res) {
 	return res.json().then(function(data_projet) {
-    console.log(data_projet);
 
     for (var i = 0; i < data_projet.length; i++) {
       // Création de la section de chaque projet
       var projet_container = document.createElement('section');
       pageProjets.appendChild(projet_container);
+			var firstContainer = document.querySelector('section:first-child');
+			firstContainer.classList = 'active';
 			var projet_container2 = document.createElement('div');
 			projet_container2.classList = 'projet_container';
 			projet_container.appendChild(projet_container2);
 
+			// PHOTO DE PRESENTATION //
+      var photoPresentation = document.createElement('div');
+      photoPresentation.classList = 'photoPresentation';
+      projet_container2.appendChild(photoPresentation);
+      var contenu_photoPresentation = data_projet[i].acf.image_presentation;
+      photoPresentation.style.backgroundImage = "url('"  + contenu_photoPresentation + "')";
+
+
+			// CONTAINER TEXTE //
+			var texte_container = document.createElement('div');
+			projet_container2.appendChild(texte_container);
+			texte_container.classList = 'texte_container';
 
       // TITRE //
       var titre_container = document.createElement('div');
-      projet_container2.appendChild(titre_container);
+      texte_container.appendChild(titre_container);
 			titre_container.classList = 'titre';
 
 			var titre = document.createElement('h1');
@@ -27,24 +40,15 @@ fetch('http://admin.zoemeriet.com/wp-json/wp/v2/projet').then(function(res) {
       titre.textContent = contenu_titre;
 
 
-      // PHOTO DE PRESENTATION //
-      var photoPresentation = document.createElement('div');
-      photoPresentation.classList = 'photoPresentation';
-      projet_container2.appendChild(photoPresentation);
-      var contenu_photoPresentation = data_projet[i].acf.image_presentation;
-      photoPresentation.style.backgroundImage = "url('"  + contenu_photoPresentation + "')";
+			// BOUTON //
+      var bouton_container = document.createElement('a');
+      texte_container.appendChild(bouton_container);
+			bouton_container.classList = 'bouton';
 
+			var bouton = document.createElement('div');
+      bouton_container.appendChild(bouton);
 
-      // NUMÉRO //
-			var numero_container = document.createElement('div');
-      projet_container2.appendChild(numero_container);
-			numero_container.classList = 'numero';
-
-      var numero = document.createElement('h3');
-      numero_container.appendChild(numero);
-
-      var contenu_numero = i + 1;
-      numero.textContent = '0' + contenu_numero;
+      bouton.textContent = 'Voir le projet';
     }
   });
 });

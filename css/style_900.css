@@ -1,47 +1,115 @@
 @media screen and (min-width: 900px) {
+  main.home {
+    background-size: auto 65%;
+  }
+  main.home h1 span.titre:nth-of-type(1) {
+    animation: animation_titre1 1.5s infinite step-start;
+  }
+  main.home h1 span.titre:nth-of-type(2) {
+    animation: animation_titre2 1.5s infinite step-start;
+  }
+  main.home h1 span.titre:nth-of-type(3) {
+    animation: animation_titre3 1.5s infinite step-start;
+  }
+  main.home h1 span.point {
+    color: #BAE1DA;
+  }
+  @keyframes animation_titre1 {
+      0% {
+          color: #080808;
+      }
+      33% {
+          color: #BAE1DA;
+      }
+      66% {
+          color: #080808;
+      }
+      100% {
+          color: #080808;
+      }
+  }
+  @keyframes animation_titre2 {
+      0% {
+          color: #080808;
+      }
+      33% {
+          color: #080808;
+      }
+      66% {
+          color: #BAE1DA;
+      }
+      100% {
+          color: #080808;
+      }
+  }
+  @keyframes animation_titre3 {
+      0% {
+          color: #080808;
+      }
+      33% {
+          color: #080808;
+      }
+      66% {
+          color: #080808;
+      }
+      100% {
+          color: #BAE1DA;
+      }
+  }
+
+
+
+  main.works {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+
+    /* overflow: hidden; */
+  }
   main.works section {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+
     display: flex;
     align-items: flex-end;
-    height: 100vh;
+
+    padding: 0 10vw;
+
+    /* transform: translateY(100%); */
+  }
+  main.works section.active {
+    /* transform: translateY(0); */
   }
   main.works div.projet_container {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 0;
+
+    background: none;
+    box-shadow: none;
   }
   div.photoPresentation {
+    flex-shrink: 0;
     width: 80vh;
     height: 80vh;
   }
-  main.works div.titre, main.works div.numero {
-    overflow: hidden;
-  }
-  main.works div.titre h1, main.works div.numero h3 {
-    text-align: left;
-  }
   main.works div.titre {
-    top: 0;
+    position: relative;
     right: 6rem;
     align-self: flex-start;
   }
   main.works div.titre h1 {
+    text-align: left;
     font-size: 7rem;
   }
-  main.works div.numero {
-    bottom: 0;
-    left: 6rem;
-    align-self: flex-end;
-  }
-  main.works div.numero h3 {
-    font-size: 9rem;
-  }
-
-
-
-
-  main.animation div.titre h1 {
-    transform: translateX(-100%);
-  }
-  main.animation div.numero h3 {
-    transform: translateX(100%);
+  main.works a.bouton div {
+    margin: 30px;
   }
 }
