@@ -1,6 +1,15 @@
 @media screen and (min-width: 900px) {
+  /* Logo */
+  div.logo {
+    width: 150px;
+    background-image: url('../img/logo2.svg');
+  }
+
   main.home {
     background-size: auto 65%;
+  }
+  main.home h1 {
+    font-size: 9rem;
   }
   main.home h1 span.titre:nth-of-type(1) {
     animation: animation_titre1 1.5s infinite step-start;
@@ -57,59 +66,74 @@
       }
   }
 
-
-
-  main.works {
-    position: relative;
-
+  /* ------------------------------------------------------- */
+  /* -------------------- PAGE PROJETS  -------------------- */
+  /* ------------------------------------------------------- */
+  .projets {
     display: flex;
+  }
+  .projets .projet {
     flex-direction: column;
 
-    width: 100vw;
+    width: 25vw;
     height: 100vh;
-
-    /* overflow: hidden; */
   }
-  main.works section {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-
-    display: flex;
-    align-items: flex-end;
-
-    padding: 0 10vw;
-
-    /* transform: translateY(100%); */
+  .projet:nth-child(even) {
+    flex-direction: column-reverse;
   }
-  main.works section.active {
-    /* transform: translateY(0); */
+  .projet_image {
+    width: 100%;
+    height: 50%;
   }
-  main.works div.projet_container {
+  .projet_content {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 
-    padding: 0;
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+  }
+  .projet_number {
+    font-size: 2rem;
+    transition: color .7s ease;
+  }
+  .projet_title {
+    font-size: 2.8rem;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    transition: color .7s ease;
+  }
+  .projet:nth-child(even) .projet_title {
+    align-self: flex-end;
+  }
 
-    background: none;
-    box-shadow: none;
+
+  /* mouvement du background */
+  .projet_background_move {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 0;
+    background: #BAE1DA;
+
+    z-index: -1;
+    transition: height .7s ease;
   }
-  div.photoPresentation {
-    flex-shrink: 0;
-    width: 80vh;
-    height: 80vh;
+  .projet:nth-child(odd) .projet_background_move {
+    top: 0;
   }
-  main.works div.titre {
-    position: relative;
-    right: 6rem;
-    align-self: flex-start;
+  .projet:nth-child(even) .projet_background_move {
+    bottom: 0;
   }
-  main.works div.titre h1 {
-    text-align: left;
-    font-size: 7rem;
+  .projet:hover .projet_background_move {
+    height: 100%;
+    transition: height .7s ease;
   }
-  main.works a.bouton div {
-    margin: 30px;
+  .projet:hover .projet_title, .projet:hover .projet_number {
+    color: #080808;
+    transition: color .7s ease;
   }
+
 }
