@@ -147,10 +147,6 @@ main.home h1 {
 
 
 
-
-
-
-
 /* ------------------------------------------------------- */
 /* -------------------- PAGE PROJETS  -------------------- */
 /* ------------------------------------------------------- */
@@ -274,4 +270,104 @@ figure.descriptionProjet_maquette {
 figure.descriptionProjet_maquette img {
   width: 100%;
   margin: 1rem;
+}
+
+
+/* ------------------------------------------------------- */
+/* -------------------- PAGE CONTACT  -------------------- */
+/* ------------------------------------------------------- */
+.propos_photo {
+  width: 100%;
+  height: 250px;
+
+  background-image: url("../img/contact_photo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.propos_content {
+  color: #080808;
+  padding: 1rem;
+}
+.propos_content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Assistant_SemiBold";
+}
+.propos_content p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-family: "Assistant";
+}
+.propos_content .text_color {
+  position: relative;
+}
+.propos_content .text_color::before {
+  position: absolute;
+  left: 0.3rem;
+	bottom: 0;
+
+	width: 105%;
+	height: 0.8rem;
+  content: '';
+  background: #BAE1DA;
+
+  z-index: -1;
+}
+.propos_content .contact {
+  margin-top: 2rem;
+}
+.propos_content .contact a {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-family: "Assistant";
+  color: #080808;
+  text-decoration: underline;
+}
+.propos_content .reseaux {
+  margin-top: 2rem;
+}
+.propos_content .reseaux ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+.propos_content .reseaux .icon {
+  font-size: 2.5rem;
+  color: #080808;
+  margin-right: 1rem;
+}
+.propos_content .reseaux .icon:hover {
+  color: #BAE1DA;
+}
+
+
+
+
+
+
+
+
+.projet {
+  display: grid;
+  grid-template: repeat(20, 5vh) / repeat(20, 5vw);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.image1 {
+  grid-area: 1 / 9 / 21 / 21;
+  background-image: url("http://admin.zoemeriet.com/wp-content/uploads/2019/02/Visuel_Coffee.png");
+  background-size: cover;
+}
+
+.image2 {
+  grid-area: 14 / 1 / 21 / 9;
+  background-image: url("http://admin.zoemeriet.com/wp-content/uploads/2019/03/Weneed_Apercu_Projet.png");
+  background-size: cover;
+}
+
+.text {
+  grid-area: 1 / 1 / 14 / 9;
 }

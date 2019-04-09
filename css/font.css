@@ -22,3 +22,30 @@
  font-family: "Vidaloka";
  src: url("../font/Vidaloka/Vidaloka-Regular.ttf");
 }
+
+/*-------- Icomoon --------*/
+@font-face {
+	font-family: "icomoon";
+	font-style: normal;
+	font-weight: normal;
+	src:  url("../font/Icomoon/icomoon.eot") format("embedded-opentype"), 
+	url("../font/Icomoon/icomoon.ttf") format("truetype"), 
+	url("../font/Icomoon/icomoon.woff") format("woff"), 
+	url("../font/Icomoon/icomoon.svg") format("svg");
+}
+
+.icon {
+    font-family: "icomoon";
+}
+.icon-dribble:before {
+	content: "\e900";
+}
+.icon-facebook:before {
+	content: "\e901";
+}
+.icon-instagram:before {
+	content: "\e902";
+}
+.icon-linkedin:before {
+	content: "\e903";
+}

@@ -6,6 +6,15 @@ myBurger.addEventListener("click", function(event){
   myBurger.classList.toggle("active");
 });
 
+//// OUVERTURE PROJET ////
+var myProjectItems = document.querySelectorAll(".gallery-wrap .item");
+myProjectItems.forEach(function(myProectItem) {
+  myProectItem.addEventListener("click", function(event){
+    var target = event.target;
+    target.classList.toggle("active");
+  });
+});
+
 
 
 const mobile = window.matchMedia( "(max-width: 900px)" );
